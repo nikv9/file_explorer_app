@@ -1,6 +1,6 @@
 
 import { Route, Routes } from 'react-router-dom'
-import FileExplorer from './components/FileExplorer.jsx'
+import FileExplorer from './components/FileExplorer'
 
 const App = () => {
   

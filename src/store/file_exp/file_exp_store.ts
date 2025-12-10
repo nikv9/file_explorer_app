@@ -1,6 +1,7 @@
+/* @ts-nocheck */
 import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
-import { initialState } from "../../initialFileData";
+import { initialState } from "../../initialFileData.ts";
 
 const addItemToParticularFolder = (items, parentId, newItem) => {
   const newCreatedItem = items.map((i) => {

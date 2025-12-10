@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Folder from "./Folder.jsx";
-import File from "./File.jsx";
-import { addFile, addFolder } from "../store/file_exp/file_exp_store.js";
+import Folder from "./Folder";
+import File from "./File";
+import { addFile, addFolder } from "../store/file_exp/file_exp_store";
 import { toast } from "react-toastify";
 
 const FileExplorer = () => {
