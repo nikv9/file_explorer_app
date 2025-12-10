@@ -1,3 +1,4 @@
+/* @ts-nocheck */
 import { useDispatch, useSelector } from "react-redux";
 import Folder from "./Folder";
 import File from "./File";

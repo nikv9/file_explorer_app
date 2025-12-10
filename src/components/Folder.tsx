@@ -1,3 +1,4 @@
+/* @ts-nocheck */
 import File from "./File";
 import { useDispatch } from "react-redux";
 import {

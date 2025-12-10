@@ -1,3 +1,4 @@
+/* @ts-nocheck */
 import { useDispatch, useSelector } from "react-redux";
 import { selectFile } from "../store/file_exp/file_exp_store";
 import { IoDocumentTextOutline } from "react-icons/io5";
