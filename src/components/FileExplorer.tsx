@@ -1,12 +1,12 @@
-/* @ts-nocheck */
 import { useDispatch, useSelector } from "react-redux";
 import Folder from "./Folder";
 import File from "./File";
 import { addFile, addFolder } from "../store/file_exp/file_exp_store";
 import { toast } from "react-toastify";
+import type { RootState } from "../store/store";
 
 const FileExplorer = () => {
-  const fileState = useSelector((state) => state.fileExp);
+  const fileState = useSelector((state:RootState) => state.fileExp);
   const dispatch = useDispatch();
 
   const addFolderHandler = () => {

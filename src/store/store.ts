@@ -6,3 +6,5 @@ export const store = configureStore({
     fileExp: fileExpSlice,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;

@@ -1,7 +1,7 @@
-/* @ts-nocheck */
 import { useDispatch, useSelector } from "react-redux";
 import { selectFile } from "../store/file_exp/file_exp_store";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import type { RootState } from "../store/store";
 
 interface FileProps {
   file: {
@@ -14,7 +14,7 @@ interface FileProps {
 
 const File = (props: FileProps) => {
   const dispatch = useDispatch();
-  const fileState = useSelector((state: any) => state.fileExp);
+  const fileState = useSelector((state: RootState) => state.fileExp);
 
   const selectFileHandler = () => {
     dispatch(selectFile(props.file));
