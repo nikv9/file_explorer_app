@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
+import type { FileExplorerState } from "./types";
 
-export const initialState = {
+export const initialState: FileExplorerState = {
   fileData: [
     {
       id: uuidv4(),
@@ -13,14 +14,14 @@ export const initialState = {
           name: "resume_ashish.pdf",
           type: "file",
           content:
-            "This is my resumeA resume is a concise, one-to-two-page document that summarizes your professional history, skills, and accomplishments to help you secure a job. It serves as a marketing tool to present your qualifications and experience to potential employers, who often use it to screen candidates before an interview. Key sections typically include contact information, a professional summary, work experience, education, and skills.",
+            "This is my resume. A resume is a concise, one-to-two-page document that summarizes your professional history, skills, and accomplishments to help you secure a job.",
         },
         {
           id: uuidv4(),
           name: "react_note.docx",
           type: "file",
           content:
-            "React, often referred to as React.js or ReactJS, is an open-source JavaScript library primarily used for building user interfaces (UIs) for web applications. Developed and maintained by Facebook, it focuses on the layer of an application, meaning it's responsible for what the user sees and interacts with.",
+            "React, often referred to as React.js or ReactJS, is an open-source JavaScript library primarily used for building user interfaces (UIs) for web applications.",
         },
       ],
     },
@@ -34,15 +35,35 @@ export const initialState = {
           id: uuidv4(),
           name: "index.html",
           type: "file",
-          content:
-            "HTML, or HyperText Markup Language, is the standard language for creating and structuring web pages. It uses a system of tags and elements to define the structure of content like headings, paragraphs, images, and links, which web browsers interpret to",
+          content: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Explorer API</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Hello, Developer</h1>
+    <p>This is standard HTML 5 boilerplate.</p>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>`,
         },
         {
           id: uuidv4(),
           name: "app.js",
           type: "file",
-          content:
-            "JS is the common abbreviation for JavaScript, which is a high-level, dynamic, and interpreted programming language. It is one of the three core technologies of the World Wide Web, alongside HTML and CSS. ",
+          content: `/**
+ * Math utilities
+ */
+function sum(a, b) {
+  return a + b;
+}
+
+const result = sum(5, 7);
+console.log("The sum is:", result);`,
         },
       ],
     },
